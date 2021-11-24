@@ -5,15 +5,23 @@
 //  Created by Варвара Фомина on 23.11.2021.
 //
 
-import UIKit
+import Spring
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet var springImageView: SpringImageView!
+    
+    @IBOutlet var springInfoAnimation: SpringLabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
+    @IBAction func pressButtonAnimation(_ sender: Any) {
+    }
+    
 
 }
 
