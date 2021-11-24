@@ -12,9 +12,8 @@ class DataManager {
     
     static let shared = DataManager()
     
-    let animation: [Spring.AnimationPreset] = Spring.AnimationPreset.allCases
-    
-    let curve:[Spring.AnimationCurve] = Spring.AnimationCurve.allCases
+    let animation = Spring.AnimationPreset.allCases
+    let curve = Spring.AnimationCurve.allCases
     
     private init() {}
 }

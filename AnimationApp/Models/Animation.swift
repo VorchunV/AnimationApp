@@ -33,7 +33,7 @@ extension Animation {
             duration: Double.random(in: 1...3),
             curve: DataManager.shared.curve.randomElement()?.rawValue ?? "",
             force: Double.random(in: 1...2),
-            delay: 0.2)
-        
+            delay: 0.2
+        )
     }
 }

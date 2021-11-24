@@ -9,13 +9,13 @@ import Spring
 
 class ViewController: UIViewController {
     
-    private var animation = Animation.getAnimation()
     
     @IBOutlet var springImageView: SpringImageView!
     @IBOutlet var springInfoAnimation: SpringLabel!
     
-    @IBOutlet var buttonPlay: UIButton!
     
+    private var animation = Animation.getAnimation()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         springInfoAnimation.text = "Here goes!"
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         springImageView.animate()
         
         animation = Animation.getAnimation()
-        buttonPlay.setTitle("Play \(animation.name)", for: .normal)
+        sender.setTitle("Play \(animation.name)", for: .normal)
     }
 }
 

@@ -33,7 +33,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="pressButtonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ODW-zJ-BqT"/>
+                                    <action selector="pressButtonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Qn-5a-lIU"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ids-FA-Z3U">
@@ -63,7 +63,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonPlay" destination="Jsm-m8-y9y" id="9fv-w6-l5t"/>
                         <outlet property="springImageView" destination="aN2-3b-g7I" id="Lfm-3X-5Xf"/>
                         <outlet property="springInfoAnimation" destination="bhW-RU-G6F" id="fcL-9Y-ZOO"/>
                     </connections>
