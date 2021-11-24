@@ -14,12 +14,26 @@ struct Animation {
     let force: Double
     let delay: Double
     
-    
+    var fullInformation: String {
+        """
+    "Name: \(name)"
+    "Duration: \(String(format: "%.2f",duration))"
+    "Cure: \(curve)"
+    "Force: \(String(format: "%.2f", force))"
+    "Delay: \(delay)"
+    """
+    }
 }
 
-
-func getAnimation() -> Animation{
-    Animation(name: <#T##String#>, duration: <#T##Double#>, curve: <#T##String#>, force: <#T##Double#>, delay: <#T##Double#>)
+extension Animation {
     
-    
+    static func getAnimation() -> Animation {
+        Animation(
+            name: DataManager.shared.animation.randomElement()?.rawValue ?? "",
+            duration: Double.random(in: 1...2),
+            curve: DataManager.shared.curve.randomElement()?.rawValue ?? "",
+            force: Double.random(in: 1...2),
+            delay: 0.2)
+        
+    }
 }
