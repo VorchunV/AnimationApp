@@ -30,7 +30,7 @@ extension Animation {
     static func getAnimation() -> Animation {
         Animation(
             name: DataManager.shared.animation.randomElement()?.rawValue ?? "",
-            duration: Double.random(in: 1...2),
+            duration: Double.random(in: 1...3),
             curve: DataManager.shared.curve.randomElement()?.rawValue ?? "",
             force: Double.random(in: 1...2),
             delay: 0.2)
